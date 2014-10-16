@@ -1,0 +1,4429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<motif_general version="1.0">
+
+	<motif id="70"
+	 name="N-Glycan core basic" 
+	class="N-Glycan"
+	category="full" 
+	comment="The standard N-Glycan Core. On reducing end: Ring, anomer and alditol jokers "  >
+			
+	<sequence id="1"  
+		reducing_end="true" >
+				
+	<sugar version="1.0">
+		<residues>
+	   		 <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+	      		<stemtype id="1" type="dglc" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+	    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+	    <substituent id="4" name="n-acetyl" />
+	    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>
+	    <basetype id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>
+	    <basetype id="7" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="4" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="3" parent="3" child="4">
+	      <linkage id="3" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="4" parent="3" child="5">
+	      <linkage id="4" parentType="o" childType="d">
+	        <parent pos="4" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="5" parent="5" child="6">
+	      <linkage id="5" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="6" parent="5" child="7">
+	      <linkage id="6" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>				
+			</sequence>
+							
+	<sequence id="2"  
+		reducing_end="true" >
+				
+	<sugar version="1.0">
+		<residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dglc" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+	    
+	    <substituent id="2" name="n-acetyl" />
+	    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+	    <substituent id="4" name="n-acetyl" />
+	    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>
+	    <basetype id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>
+	    <basetype id="7" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="4" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="3" parent="3" child="4">
+	      <linkage id="3" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="4" parent="3" child="5">
+	      <linkage id="4" parentType="o" childType="d">
+	        <parent pos="4" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="5" parent="5" child="6">
+	      <linkage id="5" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="6" parent="5" child="7">
+	      <linkage id="6" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>				
+			</sequence>								
+		</motif>
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->		
+		
+		<motif id="95" 
+		category="ambigious" 
+		name="N-Glycan truncated motif. First GlcpNAC cut off" 
+		comment="N-Glycan Core. Truncated. "  
+			class="N-Glycan">
+			
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+	    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>
+	    <basetype id="4" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>
+	    <basetype id="5" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="3" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="4" parentType="o" childType="d">
+	        <parent pos="4" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="3" parent="3" child="4">
+	      <linkage id="5" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="4" parent="3" child="5">
+	      <linkage id="6" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>				
+			</sequence>					
+		</motif>	
+
+	
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->		
+	
+	<motif id="18" 
+	name="N-Glycan high mannose" 
+	class="N-Glycan Subclass"
+	category="full" 
+	comment="N-Glycan High Mannose."  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+				
+<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="2" name="n-acetyl" />
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="7" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="8" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="9" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>    
+    <connection id="6" parent="5" child="7">
+      <linkage id="7" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="7" child="8">
+      <linkage id="8" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="7" child="9">
+      <linkage id="9" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+
+				
+				
+			
+		
+	</sequence>			
+	<sequence id="2"  
+			reducing_end="true" >
+			
+			<sugar version="1.0">
+  <residues>
+     <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dglc" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+    	<substituent id="2" name="n-acetyl" />
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="7" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="8" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="9" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>    
+    <connection id="6" parent="5" child="7">
+      <linkage id="7" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="7" child="8">
+      <linkage id="8" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="7" child="9">
+      <linkage id="9" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+			
+			</sequence>					
+</motif>
+		
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+				
+<motif id="17" 
+name="N-Glycan hybrid" 
+class="N-Glycan Subclass"
+category="full" 
+comment="N-Glycan Hybrid Type."  >
+			
+			<sequence id="1"
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="2" name="n-acetyl" />
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="7" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="8" name="n-acetyl" />
+    <basetype id="9" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>    
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="6" child="7">
+      <linkage id="6" parentType="o" childType="d">
+        <parent pos="2" />
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="7" child="8">
+      <linkage id="7" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="5" child="9">
+      <linkage id="8" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>    
+  </linkages>
+</sugar>
+
+	</sequence>		
+	
+	<sequence id="2"  
+			reducing_end="true">
+			
+			<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dglc" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+    <substituent id="2" name="n-acetyl" />
+     <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="7" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="8" name="n-acetyl" />
+    <basetype id="9" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>    
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="6" child="7">
+      <linkage id="6" parentType="o" childType="d">
+        <parent pos="2" />
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="7" child="8">
+      <linkage id="7" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="5" child="9">
+      <linkage id="8" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>    
+  </linkages>
+</sugar>
+
+			</sequence>					
+		</motif>		
+		
+		
+		
+		
+		!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+				
+<motif id="16" 
+name="N-Glycan complex"
+category="full" 
+class="N-Glycan Subclass"
+ comment="N-Glycan Core. "  >
+			
+			<sequence id="1" 
+			reducing_end="true">
+				
+				<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="2" name="n-acetyl" />
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="7" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="8" name="n-acetyl" />
+    <basetype id="9" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="10" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="11" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="6" child="7">
+      <linkage id="6" parentType="o" childType="d">
+        <parent pos="2" />
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="7" child="8">
+      <linkage id="7" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="5" child="9">
+      <linkage id="8" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="9" parent="9" child="10">
+      <linkage id="9" parentType="o" childType="d">
+        <parent pos="2" />
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="10" parent="10" child="11">
+      <linkage id="10" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+
+				
+				
+
+	</sequence>		
+	
+	<sequence id="2"  
+			reducing_end="true">
+			
+			
+			<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dglc" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+    <substituent id="2" name="n-acetyl" />
+			 <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="7" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="8" name="n-acetyl" />
+    <basetype id="9" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="10" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="11" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="6" child="7">
+      <linkage id="6" parentType="o" childType="d">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="7" child="8">
+      <linkage id="7" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="5" child="9">
+      <linkage id="8" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="9" parent="9" child="10">
+      <linkage id="9" parentType="o" childType="d">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="10" parent="10" child="11">
+      <linkage id="10" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+			
+			
+			
+			</sequence>					
+		</motif>		
+				
+		
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	<motif id="100" 
+	name="O-Glycan core 1" 
+	category="full" 
+	class="O-Glycan"
+	comment="O-Glycan Core 1"  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+	    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	<motif id="151" 
+	name="O-Glycan core 1 fuzzy" 
+	category="ambigious"
+	class="O-Glycan"
+	comment="O-Glycan Core 1. Fuzzy reducing end residue."  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dgal" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+	    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   
+	  </linkages>
+	  </sugar>					
+	</sequence>
+	
+	
+	  <sequence id="2"  
+			reducing_end="true">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+	    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	<motif id="102" 
+	name="O-Glycan core 2" 
+	category="full" 
+	class="O-Glycan"
+	comment="O-Glycan Core 2."  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				  
+	    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+		<substituent id="5" name="n-acetyl" />		  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		  <connection id="3" parent="1" child="4">
+	      <linkage id="3" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="4" parent="4" child="5">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	<motif id="153" 
+	name="O-Glycan core 2 fuzzy" 
+	category="ambigious"
+	class="O-Glycan"
+	comment="O-Glycan Core 2. Fuzzy residues."  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dgal" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				  
+	    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+		<substituent id="5" name="n-acetyl" />		  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		  <connection id="3" parent="1" child="4">
+	      <linkage id="3" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="4" parent="4" child="5">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+	
+	
+	<sequence id="2"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				  
+	    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+		<substituent id="5" name="n-acetyl" />		  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		  <connection id="3" parent="1" child="4">
+	      <linkage id="3" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="4" parent="4" child="5">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	<motif id="104"
+	class="O-Glycan"
+	category="full" 
+	 name="O-Glycan core 3"
+	  comment="O-Glycan Core 3"  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+	    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+		 <substituent id="4" name="n-acetyl" />
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="3" parent="3" child="4">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->		
+	
+	<motif id="155"
+	class="O-Glycan"
+	 name="O-Glycan core 3 fuzzy" 
+	 category="ambigious"
+	 comment="O-Glycan Core 3. Fuzzy residues."  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dgal" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+	    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+		 <substituent id="4" name="n-acetyl" />
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="3" parent="3" child="4">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+	
+	<sequence id="2"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+	    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+		 <substituent id="4" name="n-acetyl" />
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="3" parent="3" child="4">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->		
+	
+	<motif id="106"
+	name="O-Glycan core 4" 
+	category="full" 
+	class="O-Glycan"
+	comment="O-Glycan Core 4."  >
+			
+			<sequence id="1"  
+			reducing_end="true" 
+			>
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>				  
+	    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+		<substituent id="5" name="n-acetyl" />	
+		<substituent id="6" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		  <connection id="3" parent="1" child="4">
+	      <linkage id="3" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="4" parent="4" child="5">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		   <connection id="5" parent="3" child="6">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	
+	<motif id="157" 	
+	name="O-Glycan core 4 fuzzy" 
+	category="ambigious"
+	class="O-Glycan"
+	comment="O-Glycan Core 4. Fuzzy residues. "  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dgal" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>				  
+	    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+		<substituent id="5" name="n-acetyl" />	
+		<substituent id="6" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		  <connection id="3" parent="1" child="4">
+	      <linkage id="3" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="4" parent="4" child="5">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		   <connection id="5" parent="3" child="6">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+	
+	
+	<sequence id="2"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+      <stemtype id="1" type="dgal" />      
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>				  
+	    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+		<substituent id="5" name="n-acetyl" />	
+		<substituent id="6" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		  <connection id="3" parent="1" child="4">
+	      <linkage id="3" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="4" parent="4" child="5">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		   <connection id="5" parent="3" child="6">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	
+	<motif id="108" 
+	name="O-Glycan core 5" 
+	category="full" 
+	class="O-Glycan"
+	comment="O-Glycan Core 5."  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				  
+		<substituent id="4" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>			
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	
+	<motif id="159" 
+	name="O-Glycan core 5 fuzzy" 
+	category="ambigious"
+	class="O-Glycan"
+	comment="O-Glycan Core 5. Fuzzy residues. Linkage non-exact."  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dgal" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				  
+		<substituent id="4" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+	
+	<sequence id="2"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				  
+		<substituent id="4" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+	
+	
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+			
+	
+	
+	<motif id="110" 
+	name="O-Glycan core 6" 
+	category="full" 
+	class="O-Glycan"
+	comment="O-Glycan Core 6."  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>				  
+		<substituent id="4" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>			
+		
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	
+	<motif id="161" 
+	name="O-Glycan core 6 Fuzzy" 
+	category="ambigious"
+	class="O-Glycan"
+	comment="O-Glycan Core 6. Fuzzy residues."  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dgal" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>				  
+		<substituent id="4" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+	
+	
+	<sequence id="2"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>				  
+		<substituent id="4" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	
+	<motif id="112" 
+	name="O-Glycan core 7" 
+	class="O-Glycan"
+	category="full" 
+	comment="O-Glycan Core 7."  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				  
+		<substituent id="4" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>			
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->		
+	
+	<motif id="163" 
+	name="O-Glycan core 7 fuzzy" 
+	category="ambigious"
+	class="O-Glycan"
+	comment="O-Glycan Core 7. Fuzzy residues."  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dgal" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				  
+		<substituent id="4" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+	
+	<sequence id="2"  
+			reducing_end="true" >
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+      <stemtype id="1" type="dgal" />
+	    </basetype>
+	    <substituent id="2" name="n-acetyl" />
+		<basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				  
+		<substituent id="4" name="n-acetyl" />	  
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+	
+	
+		</motif>
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	
+	
+	<motif id="200" 
+	class="GPI"
+	name="GPI anchor core" 
+	category="full"
+	comment="Manα1-2Manα1-6Manα1-4GlcNac at reducing end. Ringsize fuzzy."  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>
+	    <substituent id="2" name="amino" />
+		<basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>				  
+		<basetype id="4" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>	
+		<basetype id="5" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>	
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="4" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		  <connection id="4" parent="4" child="5">
+	      <linkage id="4" parentType="o" childType="d">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+	
+	
+	
+	<sequence id="2"  
+			reducing_end="false">				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x|1:aldi">
+      <stemtype id="1" type="dglc" />
+      <modification type="aldi" pos_one="1" />
+	    </basetype>
+	    <substituent id="2" name="amino" />
+		<basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>				  
+		<basetype id="4" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>	
+		<basetype id="5" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+	      <stemtype id="1" type="dman" />
+	    </basetype>	
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="4" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	   <connection id="3" parent="3" child="4">
+	      <linkage id="4" parentType="o" childType="d">
+	        <parent pos="6" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+		  <connection id="4" parent="4" child="5">
+	      <linkage id="4" parentType="o" childType="d">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>			
+		</motif>,
+		
+			!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="300" 
+	name="Galα1-3Gal epitope"
+	category="full"
+	class="Epitope" 
+	comment="The Galα1--3Gal epitope is synthesized from type-2 glycolipid and glycoprotein precursors by a specific α1 --3 galactosyltransferase. This structure and the corresponding α1--3 galactosyltransferase are expressed by New World primates and many nonprimate mammals but are largely absent from the cells and tissues of Old World primates which include Homo sapiens."  >
+			
+			<sequence id="1"  
+			reducing_end="false">		
+					
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>
+		 <basetype id="2" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>	   
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		
+		</motif>
+		!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="303" 
+	class="Epitope"
+	category="full"
+	name="Lewis A" 
+	comment="Lewis A"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+				
+				<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="1" ringEnd="5" name="x-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="2" name="n-acetyl" />
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="4" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <stemtype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </basetype>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="1" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+			</sequence>		
+		</motif>	
+	
+	
+	
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="304" 
+	class="Epitope"
+	category="full"
+	name="Lewis B" 
+	comment="Lewis B"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+    <monosaccharide id="5" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="1" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+				
+			</sequence>		
+		</motif>	
+	
+		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="305" 
+	class="Epitope"
+	category="full"
+	name="Lewis C" 
+	comment="Lewis C"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			
+<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="4" name="n-acetyl" />
+    <monosaccharide id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+				
+				
+			</sequence>		
+		</motif>	
+		
+		!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="306" 
+	class="Epitope"
+	category="full"
+	name="Lewis D" 
+	comment="Lewis D"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="4" name="n-acetyl" />
+    <monosaccharide id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+				
+				
+			</sequence>		
+		</motif>	
+		
+		!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="307" 
+	class="Epitope"
+	category="full"
+	name="Lewis X" 
+	comment="Lewis X"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+				
+	<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="1" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+				
+				
+				
+			</sequence>		
+		</motif>	
+		
+		!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="308" 
+	class="Epitope"
+	category="full"
+	name="Lewis Y" 
+	comment="Lewis Y"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="5" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="1" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+				
+				
+			</sequence>		
+		</motif>	
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="309" 
+	class="Epitope"
+	category="full"
+	name="Sialyl Lewis A" 
+	comment="Sialyl Lewis A"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+				
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="a" superclass="non" ringStart="2" ringEnd="6" name="a-dgro-dgal-NON-2:6|1:a|2:keto|3:d">
+      <basetype id="1" type="dgro" />
+      <basetype id="2" type="dgal" />
+      <modification type="a" pos_one="1" />
+      <modification type="keto" pos_one="2" />
+      <modification type="d" pos_one="3" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+    <monosaccharide id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="2" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="5" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="1" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+				
+				
+				
+			</sequence>		
+		</motif>	
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	
+	<motif id="310" 
+	class="Epitope"
+	category="full"
+	name="Sialyl Lewis X" 
+	comment="Sialyl Lewis X"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+				
+				
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="5" anomer="a" superclass="non" ringStart="2" ringEnd="6" name="a-dgro-dgal-NON-2:6|1:a|2:keto|3:d">
+      <basetype id="1" type="dgro" />
+      <basetype id="2" type="dgal" />
+      <modification type="a" pos_one="1" />
+      <modification type="keto" pos_one="2" />
+      <modification type="d" pos_one="3" />
+    </monosaccharide>
+    <substituent id="6" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="1" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="2" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="d" childType="n">
+        <parent pos="5" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>			
+				
+			</sequence>		
+		</motif>	
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	
+	<motif id="400" 
+	class="Epitope"
+	category="full"
+	name="Lactosamine motif" 
+	comment="Lactosamine motif: B-D-GALP-(1-4)-B-D-GLCPNAC"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>	  
+		<substituent id="2" name="n-acetyl" />			    
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="4" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>	   
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>
+	
+		!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="401" 
+	class="Epitope"
+	category="full"
+	name="Neo Lactosamine" 
+	comment="Neo Lactosamine motif: B-D-GALP-(1-3)-B-D-GLCPNAC"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+				
+				<sugar version="1.0">
+	  		<residues>
+	    <basetype id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+	      <stemtype id="1" type="dglc" />
+	    </basetype>	  
+		<substituent id="2" name="n-acetyl" />			    
+		<basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+	      <stemtype id="1" type="dgal" />
+	    </basetype>				
+	  </residues>
+	  <linkages>
+	    <connection id="1" parent="1" child="2">
+	      <linkage id="1" parentType="d" childType="n">
+	        <parent pos="2" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>
+	    <connection id="2" parent="1" child="3">
+	      <linkage id="2" parentType="o" childType="d">
+	        <parent pos="3" />
+	        <child pos="1" />
+	      </linkage>
+	    </connection>	   
+	  </linkages>
+	</sugar>					
+	</sequence>		
+		</motif>
+	
+	
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	<motif id="402" 
+	class="Epitope"
+	category="full"
+	name="LacDiNAc" 
+	comment="LacDiNAc"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="4" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+		</sequence>		
+			
+			
+			
+			</motif>	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	<motif id="403" 
+	class="Epitope"
+	category="full"
+	name="Polylactosamine" 
+	comment="Polylactosamine"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+    <monosaccharide id="6" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="4" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>	
+</sequence>		
+			</motif>		
+			
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	<motif id="404" 
+	class="Epitope"
+	category="full"
+	name="Pk-Antigen" 
+	comment="Pk-Antigen"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+</sequence>				
+			
+			
+			
+			</motif>
+					
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	<motif id="405" 
+	class="Epitope"
+	category="full"
+	name="P1-Antigen" 
+	comment="P1-Antigen"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="4" name="n-acetyl" />
+    <monosaccharide id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+	 </linkages>
+</sugar>
+</sequence>				
+			
+			</motif>		
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			
+	<motif id="406" 
+	class="Epitope"
+	category="full"
+	name="P-Antigen" 
+	comment="P-Antigen"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>		
+			
+			</sequence>	
+			</motif>		
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	
+	<motif id="407" 
+	class="Epitope"
+	category="full"
+	name="SDA" 
+	comment="SDA"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="3" name="n-acetyl" />
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="5" anomer="a" superclass="non" ringStart="2" ringEnd="6" name="a-dgro-dgal-NON-2:6|1:a|2:keto|3:d">
+      <basetype id="1" type="dgro" />
+      <basetype id="2" type="dgal" />
+      <modification type="a" pos_one="1" />
+      <modification type="keto" pos_one="2" />
+      <modification type="d" pos_one="3" />
+    </monosaccharide>
+    <substituent id="6" name="n-acetyl" />
+    <monosaccharide id="7" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="8" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="2" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="2" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="d" childType="n">
+        <parent pos="5" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="4" child="7">
+      <linkage id="6" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="7" child="8">
+      <linkage id="7" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+			
+			
+			</sequence>	
+			</motif>		
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	<motif id="408" 
+	class="Epitope"
+	category="full"
+	name="CAD" 
+	comment="CAD"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="a" superclass="non" ringStart="2" ringEnd="6" name="a-dgro-dgal-NON-2:6|1:a|2:keto|3:d">
+      <basetype id="1" type="dgro" />
+      <basetype id="2" type="dgal" />
+      <modification type="a" pos_one="1" />
+      <modification type="keto" pos_one="2" />
+      <modification type="d" pos_one="3" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+    <monosaccharide id="6" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="7" name="n-acetyl" />
+    <monosaccharide id="8" anomer="a" superclass="non" ringStart="2" ringEnd="6" name="a-dgro-dgal-NON-2:6|1:a|2:keto|3:d">
+      <basetype id="1" type="dgro" />
+      <basetype id="2" type="dgal" />
+      <modification type="a" pos_one="1" />
+      <modification type="keto" pos_one="2" />
+      <modification type="d" pos_one="3" />
+    </monosaccharide>
+    <substituent id="9" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="2" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="5" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="3" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="6" child="7">
+      <linkage id="6" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="1" child="8">
+      <linkage id="7" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="2" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="8" child="9">
+      <linkage id="8" parentType="d" childType="n">
+        <parent pos="5" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+			
+			
+			
+			
+			</sequence>	
+			</motif>		
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	<motif id="409" 
+	class="Epitope"
+	category="full"
+	name="Forssmann" 
+	comment="Forssmann"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+    <monosaccharide id="6" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="7" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="4" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="6" child="7">
+      <linkage id="6" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+		
+			</sequence>	
+			</motif>		
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	
+	<motif id="410" 
+	class="Epitope"
+	category="full"
+	name="VIM" 
+	comment="VIM"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="a" superclass="non" ringStart="2" ringEnd="6" name="a-dgro-dgal-NON-2:6|1:a|2:keto|3:d">
+      <basetype id="1" type="dgro" />
+      <basetype id="2" type="dgal" />
+      <modification type="a" pos_one="1" />
+      <modification type="keto" pos_one="2" />
+      <modification type="d" pos_one="3" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="2" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="5" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>	
+			</sequence>	
+			</motif>		
+			
+			
+			!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	
+	<motif id="450" 
+	class="Epitope"
+	category="full"
+	name="Blood group A" 
+	comment="Blood group A antigen"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="4" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+			
+			
+			
+			</sequence>	
+			</motif>		
+			
+			
+					!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	
+	<motif id="451" 
+	class="Epitope"
+	category="full"
+	name="Blood group B" 
+	comment="Blood group B antigen"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+			
+			</sequence>	
+			</motif>	
+			
+					!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	
+	<motif id="452" 
+	class="Epitope"
+	category="full"
+	name="Blood group H" 
+	comment="Blood group H antigen"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-lgal-HEX-1:5|6:d">
+      <basetype id="1" type="lgal" />
+      <modification type="d" pos_one="6" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>			
+			
+			</sequence>	
+			</motif>			
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	
+	<motif id="500" 
+	name="Glycosphingolipid Lacto series"
+	category="full"
+	comment="lalu"  
+	class="Glycosphingolipid">
+	
+			<sequence id="1"  
+			reducing_end="true">
+				
+				<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <basetype id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+	</sequence>		
+		</motif>
+		
+		
+			!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	<motif id="501" 
+	category="full"
+	class="Glycosphingolipid"
+	name="Glycosphingolipid Neo-lacto series"
+	 comment="lalu"  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+			<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <basetype id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+	</sequence>		
+		</motif>
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	<motif id="502" 
+	category="full"
+	class="Glycosphingolipid"
+	name="Glycosphingolipid Ganglio series" 
+	comment="lalu"  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+			<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <basetype id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+	</sequence>		
+		</motif>	
+	
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	<motif id="503" 
+	category="full"
+	class="Glycosphingolipid"
+	name="Glycosphingolipid Globo series" 
+	comment="lali"  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+			<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <basetype id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <substituent id="5" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+	</sequence>		
+		</motif>		
+	
+	
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	<motif id="504" 
+	category="full"
+	class="Glycosphingolipid"
+	name="Glycosphingolipid Isoglobo series" 
+	comment="lal"  >
+			
+			<sequence id="1"  
+			reducing_end="true" >
+				
+			<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <basetype id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <substituent id="5" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+
+
+
+	</sequence>		
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	<motif id="505" 
+	category="full"
+	class="Glycosphingolipid"
+	name="Glycosphingolipid Muco series"
+	comment="lalu"  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+			<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <basetype id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+	</sequence>		
+		</motif>		
+	
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+	<motif id="506" 
+	category="full"
+	class="Glycosphingolipid"
+	name="Glycosphingolipid Arthro series" 
+	comment="lalu"  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+			<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <basetype id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="4" name="n-acetyl" />
+    <basetype id="5" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <substituent id="6" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+	</sequence>		
+		</motif>		
+	
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	<motif id="507" 
+	category="full"
+	class="Glycosphingolipid"
+	name="Glycosphingolipid Mollu series" 
+	comment="lalau"  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+			<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <basetype id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="3" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dman-HEX-1:5">
+      <stemtype id="1" type="dman" />
+    </basetype>
+    <basetype id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <stemtype id="1" type="dglc" />
+    </basetype>
+    <substituent id="5" name="n-acetyl" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+	</sequence>		
+		</motif>		
+		
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+<motif id="508"
+category="full"
+ class="Glycosphingolipid"
+ name="Glycosphingolipid Gala series" 
+ comment="lal"  >
+			
+			<sequence id="1"  
+			reducing_end="true">
+				
+<sugar version="1.0">
+  <residues>
+    <basetype id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+    <basetype id="2" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dgal-HEX-1:5">
+      <stemtype id="1" type="dgal" />
+    </basetype>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+	</sequence>		
+		</motif>				
+		
+		!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+<motif id="600" 
+category="full"
+name="Hyluronan" 
+class="Glyosaminoglycan"
+comment="Hyluronan"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+				
+<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5|6:a">
+      <basetype id="1" type="dglc" />
+      <modification type="a" pos_one="6" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+    <monosaccharide id="6" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5|6:a">
+      <basetype id="1" type="dglc" />
+      <modification type="a" pos_one="6" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="4" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+	</sequence>		
+		</motif>				
+		
+		
+			!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+<motif id="601" 
+category="full"
+name="Chondroitin 4S" 
+class="Glyosaminoglycan"
+comment="Chondroitin 4S"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+		
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5|6:a">
+      <basetype id="1" type="dglc" />
+      <modification type="a" pos_one="6" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+    <monosaccharide id="6" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5|6:a">
+      <basetype id="1" type="dglc" />
+      <modification type="a" pos_one="6" />
+    </monosaccharide>
+    <substituent id="7" name="sulfate" />
+    <substituent id="8" name="sulfate" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="4" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="4" child="7">
+      <linkage id="6" parentType="o" childType="n">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="1" child="8">
+      <linkage id="7" parentType="o" childType="n">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+		
+</sequence>		
+		</motif>				
+		
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+<motif id="602" 
+category="full"
+name="Dermatansulfate" 
+class="Glyosaminoglycan"
+comment="Dermatansulfate"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+		
+		<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dgal-HEX-x:x">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dido-HEX-1:5|6:a">
+      <basetype id="1" type="dido" />
+      <modification type="a" pos_one="6" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+    <monosaccharide id="6" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dido-HEX-1:5|6:a">
+      <basetype id="1" type="dido" />
+      <modification type="a" pos_one="6" />
+    </monosaccharide>
+    <substituent id="7" name="sulfate" />
+    <substituent id="8" name="sulfate" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="4" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="4" child="7">
+      <linkage id="6" parentType="o" childType="n">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="1" child="8">
+      <linkage id="7" parentType="o" childType="n">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>		
+
+		</sequence>		
+		</motif>					
+		
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+<motif id="603" 
+category="full"
+name="Keratansulfate" 
+class="Glyosaminoglycan"
+comment="Keratansulfate"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+		
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="5" name="n-acetyl" />
+    <monosaccharide id="6" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dgal-HEX-1:5">
+      <basetype id="1" type="dgal" />
+    </monosaccharide>
+    <substituent id="7" name="sulfate" />
+    <substituent id="8" name="sulfate" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="4" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="4" child="7">
+      <linkage id="6" parentType="o" childType="n">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="1" child="8">
+      <linkage id="7" parentType="o" childType="n">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>	
+
+</sequence>		
+		</motif>		
+		
+		!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+<motif id="604" 
+category="full"
+name="Heparin" 
+class="Glyosaminoglycan"
+comment="Heparin"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+		
+		<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="x" superclass="hex" ringStart="-1" ringEnd="-1" name="x-dglc-HEX-x:x">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="sulfate" />
+    <substituent id="3" name="n-acetyl" />
+    <monosaccharide id="4" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dido-HEX-1:5|6:a">
+      <basetype id="1" type="dido" />
+      <modification type="a" pos_one="6" />
+    </monosaccharide>
+    <substituent id="5" name="sulfate" />
+    <monosaccharide id="6" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="7" name="sulfate" />
+    <substituent id="8" name="n-acetyl" />
+    <monosaccharide id="9" anomer="a" superclass="hex" ringStart="1" ringEnd="5" name="a-dido-HEX-1:5|6:a">
+      <basetype id="1" type="dido" />
+      <modification type="a" pos_one="6" />
+    </monosaccharide>
+    <substituent id="10" name="sulfate" />
+    <substituent id="11" name="sulfate" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="n">
+        <parent pos="-1" />
+        <child pos="-1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="1" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="4" child="5">
+      <linkage id="4" parentType="o" childType="n">
+        <parent pos="2" />
+        <child pos="-1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="4" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="6" child="7">
+      <linkage id="6" parentType="o" childType="n">
+        <parent pos="-1" />
+        <child pos="-1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="6" child="8">
+      <linkage id="7" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="6" child="9">
+      <linkage id="8" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="9" parent="6" child="10">
+      <linkage id="9" parentType="o" childType="n">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="10" parent="1" child="11">
+      <linkage id="10" parentType="o" childType="n">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+		
+			
+
+</sequence>		
+		</motif>
+		
+	!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="1000" 
+	category="full"
+	class="Bacterial class"
+	name="LPS core" 
+	comment="Lipopolysaccharide core"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+	
+<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="x" superclass="hex" ringStart="1" ringEnd="5" name="x-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="amino" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="4" name="amino" />
+    <monosaccharide id="5" anomer="b" superclass="oct" ringStart="2" ringEnd="6" name="b-dman-OCT-2:6|1:a|2:keto|3:d">
+      <basetype id="1" type="dman" />
+      <modification type="a" pos_one="1" />
+      <modification type="keto" pos_one="2" />
+      <modification type="d" pos_one="3" />
+    </monosaccharide>
+    <monosaccharide id="6" anomer="x" superclass="hep" ringStart="-1" ringEnd="-1" name="x-HEP-x:x" />
+    <monosaccharide id="7" anomer="x" superclass="hep" ringStart="-1" ringEnd="-1" name="x-HEP-x:x" />
+    <monosaccharide id="8" anomer="x" superclass="hep" ringStart="-1" ringEnd="-1" name="x-HEP-x:x" />
+    <monosaccharide id="9" anomer="x" superclass="hep" ringStart="-1" ringEnd="-1" name="x-HEP-x:x" />
+    <monosaccharide id="10" anomer="x" superclass="oct" ringStart="2" ringEnd="6" name="x-dman-OCT-2:6|1:a|2:keto|3:d">
+      <basetype id="1" type="dman" />
+      <modification type="a" pos_one="1" />
+      <modification type="keto" pos_one="2" />
+      <modification type="d" pos_one="3" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="d">
+        <parent pos="6" />
+        <child pos="2" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="5" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="-1" />
+        <child pos="-1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="6" child="7">
+      <linkage id="6" parentType="o" childType="d">
+        <parent pos="-1" />
+        <child pos="-1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="7" child="8">
+      <linkage id="7" parentType="o" childType="d">
+        <parent pos="-1" />
+        <child pos="-1" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="7" child="9">
+      <linkage id="8" parentType="o" childType="d">
+        <parent pos="-1" />
+        <child pos="-1" />
+      </linkage>
+    </connection>
+    <connection id="9" parent="5" child="10">
+      <linkage id="9" parentType="o" childType="d">
+        <parent pos="-1" />
+        <child pos="2" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+
+	</sequence>	
+			</motif>
+	
+		
+		!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="1101" 
+	class="Bacterial class"
+	category="full"
+	name="Peptidoglycan" 
+	comment="Peptidoglycan structure GlcNAc(b1-4)MurNAc"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="x" superclass="hex" ringStart="1" ringEnd="5" name="x-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="2" name="n-acetyl" />
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="4" name="n-acetyl" />
+    <substituent id="5" name="(r)-lactate" />
+    <monosaccharide id="6" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="7" name="n-acetyl" />
+    <monosaccharide id="8" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <substituent id="9" name="n-acetyl" />
+    <substituent id="10" name="(r)-lactate" />
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="1" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="4" parent="3" child="5">
+      <linkage id="4" parentType="o" childType="n">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="5" parent="3" child="6">
+      <linkage id="5" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="6" parent="6" child="7">
+      <linkage id="6" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="7" parent="6" child="8">
+      <linkage id="7" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="8" parent="8" child="9">
+      <linkage id="8" parentType="d" childType="n">
+        <parent pos="2" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="9" parent="8" child="10">
+      <linkage id="9" parentType="o" childType="n">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>			
+			
+	</sequence>	
+			</motif>
+		
+		
+
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="1102" 
+	category="full"
+	class="Bacterial class"
+	name="Beta-glucan" 
+	comment="Beta-glucan"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="3" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+			
+	</sequence>	
+			</motif>		
+			
+			
+!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->	
+
+	
+	<motif id="1500" 
+	category="full"
+	class="Plant class"
+	name="Cellulose like Glc(1-4)n" 
+	comment="Cellulose like Glc(1-4) min. 4 connected"  >
+			
+			<sequence id="1"  
+			reducing_end="false">
+			
+			<sugar version="1.0">
+  <residues>
+    <monosaccharide id="1" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="2" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="3" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+    <monosaccharide id="4" anomer="b" superclass="hex" ringStart="1" ringEnd="5" name="b-dglc-HEX-1:5">
+      <basetype id="1" type="dglc" />
+    </monosaccharide>
+  </residues>
+  <linkages>
+    <connection id="1" parent="1" child="2">
+      <linkage id="1" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="2" parent="2" child="3">
+      <linkage id="2" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+    <connection id="3" parent="3" child="4">
+      <linkage id="3" parentType="o" childType="d">
+        <parent pos="4" />
+        <child pos="1" />
+      </linkage>
+    </connection>
+  </linkages>
+</sugar>
+
+			
+			
+	</sequence>	
+			</motif>		
+		
+		
+</motif_general>

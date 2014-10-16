@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.eurocarbdb</groupId>
+	<artifactId>MolecularFramework</artifactId>
+	<version>0.1-b31</version>
+	<distributionManagement>
+		<repository>
+			<id>nexus-glycoinfo</id>
+			<name>Internal Releases</name>
+			<url>http://nexus.glycoinfo.org/nexus/content/repositories/thirdparty/</url>
+		</repository>
+	</distributionManagement>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source />
+					<target />
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.eurocarbdb</groupId>
+			<artifactId>resourcesdb</artifactId>
+			<version>0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom</artifactId>
+			<version>1.1</version>
+		</dependency>
+	</dependencies>
+</project>
