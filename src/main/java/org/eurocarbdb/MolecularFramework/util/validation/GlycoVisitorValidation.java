@@ -1785,6 +1785,7 @@ public class GlycoVisitorValidation implements GlycoVisitor
 
             if (t_aIntKeto.size()==0){
                 t_aIntKeto.add(1);
+                t_aIntKeto.add(-1);  // <-- これを追加・・・Monosaccharideは"-1"を許容しているため
             }
 
             for (Linkage t_lin : t_edge.getGlycosidicLinkages()){

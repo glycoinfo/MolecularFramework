@@ -13,7 +13,9 @@ public enum SequenceFormat
     KCF_SOKA("kcf_soka"),
     GLYCOBASE_LILLE("glycobase_lille"),
     GLYCOBASE_DUBLIN("glycobase_dublin"),
+    WURCS("wurcs"),
     LINEARCODE("linearcode");
+
 
     private String m_strFullname;
 
