@@ -126,6 +126,23 @@
 		</plugins>
 	</reporting>
 
+	<repositories>
+		<repository>
+			<id>glycoinfo</id>
+			<url>http://nexus.glycoinfo.org/nexus/</url>
+			<releases>
+				<enabled>false</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<distributionManagement>
 		<repository>
 			<id>nexus-glycoinfo</id>
