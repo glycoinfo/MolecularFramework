@@ -129,7 +129,7 @@
 	<repositories>
 		<repository>
 			<id>glycoinfo</id>
-			<url>http://nexus.glycoinfo.org/nexus/</url>
+			<url>http://nexus.glycoinfo.org/content/groups/public/</url>
 			<releases>
 				<enabled>false</enabled>
 				<updatePolicy>always</updatePolicy>
@@ -145,13 +145,13 @@
 
 	<distributionManagement>
 		<repository>
-			<id>nexus-glycoinfo</id>
+			<id>glycoinfo</id>
 			<name>Internal Releases</name>
-			<url>http://nexus.glycoinfo.org/nexus/content/repositories/thirdparty/</url>
+			<url>http://nexus.glycoinfo.org/content/repositories/thirdparty/</url>
 		</repository>
 		<snapshotRepository>
-			<id>nexus-glycoinfo</id>
-			<url>http://nexus.glycoinfo.org/nexus/content/repositories/snapshots</url>
+			<id>glycoinfo</id>
+			<url>http://nexus.glycoinfo.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
