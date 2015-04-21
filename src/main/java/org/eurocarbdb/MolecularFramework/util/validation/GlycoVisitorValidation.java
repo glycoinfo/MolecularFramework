@@ -432,10 +432,10 @@ public class GlycoVisitorValidation implements GlycoVisitor
         try
         {
             this.m_objGlycoGraph = a_objSugar;
-            if ( a_objSugar.getRootNodes().size() != 1 )
-            {
-                this.m_aErrorList.add("Sugar has more than one root residue.");
-            }
+//            if ( a_objSugar.getRootNodes().size() != 1 )
+//            {
+//                this.m_aErrorList.add("Sugar has more than one root residue.");
+//            }
             GlycoTraverser t_objTraverser = this.getTraverser(this);
             t_objTraverser.traverseGraph(a_objSugar);
             GlycoVisitorNodeType t_visType = new GlycoVisitorNodeType();

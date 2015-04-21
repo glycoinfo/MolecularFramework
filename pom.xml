@@ -13,7 +13,7 @@
 
 	<groupId>org.eurocarbdb</groupId>
 	<artifactId>MolecularFramework</artifactId>
-	<version>0.1-b33-SNAPSHOT</version>
+	<version>0.1-b33</version>
 
 	<ciManagement>
 		<notifiers>
@@ -216,6 +216,16 @@
 			<artifactId>junit</artifactId>
 			<version>4.8.2</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.2</version>
 		</dependency>
 	</dependencies>
 </project>
