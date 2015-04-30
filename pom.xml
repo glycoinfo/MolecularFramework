@@ -47,7 +47,6 @@
 			<organization>Blue Tree International</organization>
 			<organizationUrl>http://bluetree.jp</organizationUrl>
 			<roles>
-				<role>architect</role>
 				<role>developer</role>
 			</roles>
 			<timezone>-9</timezone>
@@ -76,6 +75,7 @@
 
 	<reporting>
 		<plugins>
+		<!-- 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -84,7 +84,7 @@
 					<show>public</show>
 				</configuration>
 			</plugin>
-
+ -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-changelog-plugin</artifactId>
@@ -163,6 +163,7 @@
 				<configuration>
 					<source />
 					<target />
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -177,6 +178,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- 
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<executions>
@@ -189,6 +191,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			 -->
 			<plugin>
 				<!-- explicitly define maven-deploy-plugin after other to force exec 
 					order -->
@@ -202,6 +205,16 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.4</version>
+				<configuration>
+					<port>5173</port>
+					<tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
+					<encoding>UTF-8</encoding>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
