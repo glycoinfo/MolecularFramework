@@ -25,8 +25,8 @@
 	</ciManagement>
 
 	<scm>
-		<connection>scm:git:http://glycoinfo.org:8090/git/aoki/rdfdao.git</connection>
-		<url>http://glycoinfo.org:8090/aoki/rdfdao</url>
+		<connection>scm:git:https://bitbucket.org/glycosw/eurocarbmolecularframework.git</connection>
+		<url>https://bitbucket.org/glycosw/eurocarbmolecularframework.git</url>
 	</scm>
 
 	<licenses>
@@ -40,22 +40,6 @@
 
 	<developers>
 		<developer>
-			<id>aoki</id>
-			<name>Nobu</name>
-			<email>aokin...@gmail.com</email>
-			<url>http://bluetree.jp</url>
-			<organization>Blue Tree International</organization>
-			<organizationUrl>http://bluetree.jp</organizationUrl>
-			<roles>
-				<role>developer</role>
-			</roles>
-			<timezone>-9</timezone>
-			<properties>
-				<picUrl>https://lh5.googleusercontent.com/-P5Hjz3ucoZI/AAAAAAAAAAI/AAAAAAAABaE/bBamOHoKod8/s120-c/photo.jpg</picUrl>
-			</properties>
-		</developer>
-
-		<developer>
 			<id>rene</id>
 			<name>Rene</name>
 			<email>r...@ccrc.uga.edu</email>
@@ -68,7 +52,6 @@
 			</roles>
 			<timezone>-9</timezone>
 			<properties>
-				<picUrl>https://lh5.googleusercontent.com/-P5Hjz3ucoZI/AAAAAAAAAAI/AAAAAAAABaE/bBamOHoKod8/s120-c/photo.jpg</picUrl>
 			</properties>
 		</developer>
 	</developers>
@@ -146,11 +129,12 @@
 	<distributionManagement>
 		<repository>
 			<id>glycoinfo</id>
-			<name>Internal Releases</name>
-			<url>http://nexus.glycoinfo.org/content/repositories/thirdparty/</url>
+			<name>releases</name>
+			<url>http://nexus.glycoinfo.org/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>glycoinfo</id>
+			<name>snapshots</name>
 			<url>http://nexus.glycoinfo.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
