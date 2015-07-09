@@ -18,7 +18,7 @@
 	<ciManagement>
 		<notifiers>
 			<notifier>
-				<address>aoki@glytoucan.org</address>
+				<address>support@glytoucan.org</address>
 				<type>mail</type>
 			</notifier>
 		</notifiers>
