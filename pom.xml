@@ -13,7 +13,7 @@
 
 	<groupId>org.eurocarbdb</groupId>
 	<artifactId>MolecularFramework</artifactId>
-	<version>0.1-b34-SNAPSHOT</version>
+	<version>0.1-b35-SNAPSHOT</version>
 
 	<ciManagement>
 		<notifiers>

@@ -240,9 +240,11 @@ public class Monosaccharide extends GlycoNode
 		}
 
 		ComparatorModification cf = new ComparatorModification();
-		Collections.sort( this.m_aModifications , cf );
+//		Collections.sort( this.m_aModifications , cf );
+		ArrayList<Modification> t_ModificationsSorted = (ArrayList<Modification>) this.m_aModifications.clone();
+		Collections.sort( t_ModificationsSorted, cf );
 
-		for (Iterator<Modification> iter = this.getModification().iterator(); iter.hasNext();) {
+		for (Iterator<Modification> iter = t_ModificationsSorted.iterator(); iter.hasNext();) {
 			Modification element = iter.next();
 			if (element.hasPositionTwo()){
 				t_Modifications=t_Modifications+
