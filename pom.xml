@@ -124,6 +124,10 @@
 				<checksumPolicy>warn</checksumPolicy>
 			</snapshots>
 		</repository>
+		<repository>
+			<id>glycoinfo-thirdparty</id>
+			<url>http://nexus.glycoinfo.org/content/repositories/thirdparty/</url>
+		</repository>
 	</repositories>
 
 	<distributionManagement>
@@ -133,7 +137,7 @@
 			<url>http://nexus.glycoinfo.org/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
-			<id>glycoinfo</id>
+			<id>glycoinfo-snapshots</id>
 			<name>snapshots</name>
 			<url>http://nexus.glycoinfo.org/content/repositories/snapshots</url>
 		</snapshotRepository>
