@@ -114,7 +114,7 @@
 			<id>glycoinfo</id>
 			<url>http://nexus.glycoinfo.org/content/groups/public/</url>
 			<releases>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
 				<checksumPolicy>warn</checksumPolicy>
 			</releases>
