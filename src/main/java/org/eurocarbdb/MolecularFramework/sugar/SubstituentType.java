@@ -45,7 +45,8 @@ public enum SubstituentType
     S_LACTATE("(s)-lactate",1,2, false),
     S_PYRUVATE("(s)-pyruvate",2,2, false),
     SULFATE("sulfate",1,2, false),
-    THIO("thio",1,1, false),
+//    THIO("thio",1,1, false),
+    THIO("thio",1,2, false),  // changed by Masaaki Matsubara 04/10/2020
     AMIDINO("amidino",1,1, false),
     N_AMIDINO("n-amidino",1,1, false),
     R_CARBOXYMETHYL("(r)-carboxymethyl",1,1, false),
